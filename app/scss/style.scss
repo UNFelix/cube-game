@@ -1,0 +1,30 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+
+.header {
+  margin: 20px 0;
+}
+
+.nav {
+  margin-top: 30px;
+}
+
+.btn-success {
+  margin-right: 20px;
+}
+
+.field {
+  background-color: aquamarine;
+  height: 600px;
+  border-radius: 10px;
+  border: 1px solid;
+}
+.scores {
+  background-color: bisque;
+  height: 600px;
+  border-radius: 10px;
+  border: 1px solid;
+}
+
+@import "media";
