@@ -1,0 +1,65 @@
+#button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+dialog {
+  top: 50%;
+  text-align: center;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+}
+dialog::backdrop {
+  backdrop-filter: blur(3px) contrast(0.3);
+}
+
+#close {
+  background: none;
+  border: none;
+  position: absolute;
+  right: -25px;
+  top: -5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.checked input:invalid {
+  border-color: orangered;
+  outline: none;
+}
+.checked input {
+  border-color: lime;
+  outline: none;
+}
+fieldset {
+  padding: 50px !important;
+  background-color: lightskyblue;
+  box-shadow: 0px 0px 0px 5px #a0a0a0, inset 0px 0px 40px -4px #141414, inset 0px -20px 90px 0px #0f437a, 0px 15px 25px 45px rgba(0,0,0,0)
+  font-weight: 700;
+  font-size: 40px;
+  text-align: left;
+  border: 2px solid;
+  border-radius: 10px;
+}
+
+.form-input {
+  margin-bottom: 20px;
+}
+
+.btn-info {
+  color: #fff;
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+  display: block !important;
+  margin: auto !important;
+  padding: 15px 50px !important;
+  font-size: 25px !important;
+}
