@@ -47,33 +47,35 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-7 offset-md-1">
-          <div class="field">
+          <div class="field field__main">
             <div class="block block__sm"></div>
             <div class="block block__big"></div>
           </div>
         </div>
         <div class="col-md-3">
-          <div class="scores">
+          <div class="field field__scores">
           </div>
         </div>
       </div>
     </div>
+    <button id="button">My button</button>
 
+    <dialog id="modal">
+      <button id="close">❌</button>
+      <form action="javascript:">
+        <fieldset>
+          <legend>Your Score : <span>150</span></legend>
+          <input class="form-input" placeholder="Name" type="text" required>
+          <button id="submit" class="btn btn-info">Save</button>
+        </fieldset>
+      </form>
+    </dialog>
 
   </section>
 
-  <button id="button">My button</button>
 
-  <dialog id="modal">
-    <button id="close">❌</button>
-    <form action="javascript:">
-      <fieldset>
-        <legend>Your Score : <span>150</span></legend>
-        <input class="form-input" placeholder="Name" type="text" required>
-        <button id="submit" class="btn btn-info">Save</button>
-      </fieldset>
-    </form>
-  </dialog>
+
+  <footer class="footer"></footer>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
