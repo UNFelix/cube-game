@@ -3,16 +3,16 @@ const closeBtn = document.getElementById('close')
 const submitBtn = document.getElementById('submit')
 const modalDialog = document.getElementById('modal')
 const modalForm = document.forms[0]
+const startBtn = document.getElementById("startBtn")
 
-
-openModalBtn.onclick = () => modalDialog.showModal()
+// openModalBtn.onclick = () => modalDialog.showModal()
 closeBtn.onclick = () => modalDialog.close()
 submitBtn.onclick = () => modalForm.classList.add('checked')
 
 
-let seconds=60;
+let seconds = 60;
 let timer;
-function myFunction() {
+function countdown() {
   if(seconds < 60) { // I want it to say 1:00, not 60
     document.getElementById("timer").innerHTML = seconds;
   }
@@ -23,10 +23,10 @@ function myFunction() {
     return modalDialog.showModal()
   }
 }
-document.getElementById("startBtn").onclick = function() {
+startBtn.onclick = function() {
   if(!timer) {
     timer = window.setInterval(function() { 
-      myFunction();
+      countdown();
     }, 1000); // every second
   }
 } 
