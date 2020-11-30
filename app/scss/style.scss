@@ -5,6 +5,23 @@
 .header {
   margin: 15px 0;
   box-shadow: 0 0 25px 25px #8cff85, inset 0 70px 100px -35px #00fd9d;
+  &-logo {
+    border-radius: 10px;
+    margin-top: 25px;
+    padding: 5px;
+  }
+  & h1 {
+    color: #2e5a4a;
+  }
+  &-logo:hover {
+    box-shadow: 5px 5px 15px 5px #ff8080, -9px -7px 15px 5px #ffe488,
+      -7px -10px 15px 5px #8cff85, 12px -5px 15px 5px #80c7ff,
+      12px 10px 15px 7px #e488ff, -10px 10px 15px 7px #ff616b,
+      -10px -7px 27px 1px #8e5cff, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  }
+  &-logo a:hover {
+    text-decoration: none;
+  }
 }
 
 section {
@@ -13,7 +30,8 @@ section {
 }
 
 .nav {
-  margin-top: 30px;
+  margin-top: 23px;
+  padding-bottom: 20px;
 }
 
 .btn-success {
